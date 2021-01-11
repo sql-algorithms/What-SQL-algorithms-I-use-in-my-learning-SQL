@@ -45,23 +45,12 @@ WHERE
   (D.CUATM_FULL LIKE '%'||:pCOD_CUATM||';%') AND
   D.FORM IN (58)  AND
   D.CAPITOL IN (419,416,417,418)
-  
- 
-  
-  
-  
-  
+
   GROUP BY 
    D.UNIT_CODE,
    D.CAPITOL,
    D.RIND
 
-  
-
-
---HAVING 
---SUM(D.COL16) <> 0 OR 
---SUM(D.COL16) < 0
 
     ORDER BY 
    D.CAPITOL,
