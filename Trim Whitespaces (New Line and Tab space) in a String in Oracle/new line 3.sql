@@ -1,4 +1,4 @@
-De--update CIS2.RENIM
+--update CIS2.RENIM
 --
 --SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
 --
