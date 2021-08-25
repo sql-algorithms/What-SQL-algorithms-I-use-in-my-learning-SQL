@@ -12,9 +12,9 @@ from CIS2.DATA_ALL_FR
 
 where 
 
----- PERIOADA = :pPERIOADA 
----- 
----- AND FORM = :pFORM
+ PERIOADA = :pPERIOADA 
+ 
+AND FORM = :pFORM
 ---- 
 ----
 ----OR 
