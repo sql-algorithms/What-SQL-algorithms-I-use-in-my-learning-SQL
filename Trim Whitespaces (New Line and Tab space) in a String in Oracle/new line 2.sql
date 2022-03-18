@@ -2,10 +2,6 @@
 --
 --SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    '))
 
-
-
-
-
 select 
 CUIIO,
 CUIIO_VERS,

@@ -28,14 +28,15 @@ FROM
   VW_DATA_ALL_GC  D
             INNER JOIN MD_RIND MR ON MR.ID_MD = D.ID_MD 
 WHERE
-  (D.PERIOADA IN (:pPERIOADA))  AND   
+ (D.PERIOADA IN (:pPERIOADA))  AND   
+--   D.PERIOADA BETWEEN FLOOR(:pPERIOADA/4)*4 AND :pPERIOADA AND 
   (D.FORM =:pFORM) AND
   (D.FORM_VERS =:pFORM_VERS) AND 
   (:pID_MDTABLE =:pID_MDTABLE) AND 
   (D.CUATM_FULL LIKE '%'||:pCOD_CUATM||';%') 
   
   AND
-  D.FORM IN (62)  
+  D.FORM IN (58)  
  -- D.CAPITOL IN (416)
   
   --AND D.UNIT_CODE =  168386 
@@ -67,59 +68,59 @@ WHERE
     D.COL18,
     D.COL19
  
- HAVING 
-  D.COL1 = 'NaN'  OR D.COL2 = 'NaN' OR 
-  D.COL3 = 'NaN'  OR D.COL4 = 'NaN' OR 
-  D.COL5 = 'NaN'  OR D.COL6 = 'NaN' OR 
-  D.COL7 = 'NaN'  OR  D.COL8 = 'NaN'  
-
-  OR 
-  
-  D.COL9 = 'NaN'
-  OR
-  D.COL10 = 'NaN'
-  
-  OR 
-  
-  D.COL11 = 'NaN'
-  
-  OR 
-  D.COL12 = 'NaN'
-  
-  OR 
-  D.COL13 = 'NaN'
-  
-  OR 
-  D.COL14 = 'NaN'
-
-  
-  
-
-  
-  OR 
-
-   D.COL16 = 'NaN'
- 
-   OR 
-   
-   D.COL15 = 'NaN'
-
-
-
- 
-  OR 
-
-   D.COL17 = 'NaN'
- 
-   OR 
-   
-   D.COL18 = 'NaN'
-   
-   
-   OR 
-   
-   D.COL19 = 'NaN'
-   
+-- HAVING 
+--  D.COL1 = 'NaN'  OR D.COL2 = 'NaN' OR 
+--  D.COL3 = 'NaN'  OR D.COL4 = 'NaN' OR 
+--  D.COL5 = 'NaN'  OR D.COL6 = 'NaN' OR 
+--  D.COL7 = 'NaN'  OR  D.COL8 = 'NaN'  
+--
+--  OR 
+--  
+--  D.COL9 = 'NaN'
+--  OR
+--  D.COL10 = 'NaN'
+--  
+--  OR 
+--  
+--  D.COL11 = 'NaN'
+--  
+--  OR 
+--  D.COL12 = 'NaN'
+--  
+--  OR 
+--  D.COL13 = 'NaN'
+--  
+--  OR 
+--  D.COL14 = 'NaN'
+--
+--  
+--  
+--
+--  
+--  OR 
+--
+--   D.COL16 = 'NaN'
+-- 
+--   OR 
+--   
+--   D.COL15 = 'NaN'
+--
+--
+--
+-- 
+--  OR 
+--
+--   D.COL17 = 'NaN'
+-- 
+--   OR 
+--   
+--   D.COL18 = 'NaN'
+--   
+--   
+--   OR 
+--   
+--   D.COL19 = 'NaN'
+--   
  
  ORDER BY 
- D.COL16
+ D.COL1
