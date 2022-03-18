@@ -116,5 +116,4 @@ REGEXP_LIKE (D.COL19, '[[:alpha:]]')
             
   
     ORDER BY 
-   D.CAPITOL,
-   D.RIND
+  D.COL1

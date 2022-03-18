@@ -52,6 +52,4 @@ WHERE
    D.RIND
 
 
-    ORDER BY 
-   D.CAPITOL,
-   D.RIND
+   

@@ -14,7 +14,7 @@ where
 
  PERIOADA = :pPERIOADA 
  
-AND FORM = :pFORM
+AND FORM = :pFORM AND 
 ---- 
 ----
 ----OR 

@@ -36,7 +36,7 @@ FROM
 WHERE 
 
 --------------------------------------
- (D.PERIOADA = 1047)  AND   
+ (D.PERIOADA = 1051)  AND   
   (D.FORM = 58) AND
   (D.FORM_VERS =1004) AND 
   (:pID_MDTABLE =:pID_MDTABLE) AND 

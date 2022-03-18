@@ -13,7 +13,7 @@ CUIIO_VERS,
 TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')) DENUMIRE,
 denumire denumire_wrong,
 TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    ')) IDNO,
-IDNO IDNO_wrong
+IDNO IDNO_wro
 
 
 from CIS2.RENIM
