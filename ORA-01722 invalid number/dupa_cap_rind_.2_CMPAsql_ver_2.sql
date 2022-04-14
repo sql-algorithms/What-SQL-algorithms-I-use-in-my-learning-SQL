@@ -1,5 +1,7 @@
 ﻿SELECT 
+D.PERIOADA,
 D.UNIT_CODE,
+
          CASE 
          
               WHEN D.CAPITOL = 416 THEN 'CAP1'
@@ -34,62 +36,64 @@ FROM
 
 
 WHERE 
-REGEXP_LIKE (D.COL1, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL16, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL2, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL3, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL4, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL5, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL6, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL7, '[[:alpha:]]')
-OR 
-REGEXP_LIKE (D.COL8, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL9, '[[:alpha:]]')
-
-
-OR 
-REGEXP_LIKE (D.COL10, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL11, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL12, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL13, '[[:alpha:]]')
-
-
-OR 
-REGEXP_LIKE (D.COL14, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL15, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL16, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL17, '[[:alpha:]]')
-
-
-OR 
-REGEXP_LIKE (D.COL18, '[[:alpha:]]')
-
-OR 
-REGEXP_LIKE (D.COL19, '[[:alpha:]]')
+1=1
+--REGEXP_LIKE (D.COL1, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL16, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL2, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL3, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL4, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL5, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL6, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL7, '[[:alpha:]]')
+--OR 
+--REGEXP_LIKE (D.COL8, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL9, '[[:alpha:]]')
+--
+--
+--OR 
+--REGEXP_LIKE (D.COL10, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL11, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL12, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL13, '[[:alpha:]]')
+--
+--
+--OR 
+--REGEXP_LIKE (D.COL14, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL15, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL16, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL17, '[[:alpha:]]')
+--
+--
+--OR 
+--REGEXP_LIKE (D.COL18, '[[:alpha:]]')
+--
+--OR 
+--REGEXP_LIKE (D.COL19, '[[:alpha:]]')
 
  GROUP BY 
+ D.PERIOADA,
    D.UNIT_CODE,
    D.CAPITOL,
    D.RIND,
@@ -116,4 +120,4 @@ REGEXP_LIKE (D.COL19, '[[:alpha:]]')
             
   
     ORDER BY 
-  D.COL1
+  D.COL8

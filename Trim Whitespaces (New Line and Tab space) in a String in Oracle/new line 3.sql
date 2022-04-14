@@ -17,7 +17,7 @@ IDNO IDNO_wro
 
 
 from CIS2.RENIM
-
+--
 
 
 where 
