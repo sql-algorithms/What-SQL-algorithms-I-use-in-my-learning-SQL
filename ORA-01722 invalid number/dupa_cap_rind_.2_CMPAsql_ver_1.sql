@@ -49,7 +49,12 @@ WHERE
   GROUP BY 
    D.UNIT_CODE,
    D.CAPITOL,
-   D.RIND
+   D.RIND,
+   D.COL8
+
+
+ORDER BY
+D.COL8
 
 
    
