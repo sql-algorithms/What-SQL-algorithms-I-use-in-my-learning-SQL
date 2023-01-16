@@ -1,22 +1,22 @@
-update CIS2.RENIM
-
-SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
-
-    IDNO = TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    '))
-
-
-
-
---select 
---CUIIO,
---CUIIO_VERS,
---TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')) DENUMIRE,
---denumire denumire_wrong,
---TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    ')) IDNO,
---IDNO IDNO_wro
+--update CIS2.RENIM
 --
+--SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
 --
---from CIS2.RENIM
+--    IDNO = TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    '))
+
+
+
+
+select 
+CUIIO,
+CUIIO_VERS,
+TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')) DENUMIRE,
+denumire denumire_wrong,
+TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    ')) IDNO,
+IDNO IDNO_wrong
+
+
+from CIS2.RENIM
 
 
 
