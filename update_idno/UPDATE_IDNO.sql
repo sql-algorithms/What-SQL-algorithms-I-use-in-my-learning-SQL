@@ -1,0 +1,9 @@
+UPDATE CIS2.RENIM 
+
+    SET IDNO = 1023607000719
+    
+    
+    WHERE 
+    
+    CUIIO = 41124079;
+    
