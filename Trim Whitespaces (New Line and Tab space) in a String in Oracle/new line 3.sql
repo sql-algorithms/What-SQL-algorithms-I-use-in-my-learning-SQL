@@ -6,7 +6,6 @@
 
 
 
-
 select 
 CUIIO,
 CUIIO_VERS,
@@ -45,6 +44,6 @@ instr(IDNO, chr(11)) > 0
 
 )
 
---AND CUIIO_VERS < 2000
+AND CUIIO = 10065422
 
 ;
