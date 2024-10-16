@@ -3,7 +3,7 @@
 --SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
 --
 --    IDNO = TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    '))
-----------------------------
+------------------------------
 
 
 select 
