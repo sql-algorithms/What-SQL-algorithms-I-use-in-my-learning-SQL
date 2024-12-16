@@ -1,9 +1,9 @@
-update CIS2.RENIM
-
-SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
-
-    IDNO = TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    '))
-------------------------------
+--update CIS2.RENIM
+--
+--SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
+--
+--    IDNO = TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    '))
+--------------------------------
 
 
 --select 
@@ -16,10 +16,10 @@ SET DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
 --
 --
 --from CIS2.RENIM
-
-
-
-where 
+--
+--
+--
+--where 
 
 (
 
