@@ -1,15 +1,15 @@
 --TThis code aims to find and remove whitespace characters, including newline (chr(10)), tab (chr(11)), and carriage return (chr(13)), 
 update CIS2.RENIM
-
+------------------------------------
 SET 
 
-
+----------------------------
 --What is more correctly 
 -- use this 
 DENUMIRE = TRIM(translate(DENUMIRE, chr(10)||chr(11)||chr(13), '    ')),
 
   IDNO = TRIM(translate(IDNO, chr(10)||chr(11)||chr(13), '    '))
-
+-------------------------------
 
 --or use this   
   
