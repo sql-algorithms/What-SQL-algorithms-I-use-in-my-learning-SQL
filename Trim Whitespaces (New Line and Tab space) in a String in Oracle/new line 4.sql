@@ -1,8 +1,9 @@
 --TThis code aims to find and remove whitespace characters, including newline (chr(10)), tab (chr(11)), and carriage return (chr(13)), 
-update CIS2.RENIM
+update CIS2.RENIM --
+-----------------------------------------------------------------------------------
 ------------------------------------
 SET 
-
+------------------------------
 ----------------------------
 --What is more correctly 
 -- use this 
