@@ -5,7 +5,9 @@ WHERE
 REGEXP_LIKE(denumire, '[[:cntrl:]]')
 OR 
 IDNO = REGEXP_REPLACE(IDNO, '[[:cntrl:]]', '')
-AND CUIIO_VERS = 2014
+--AND CUIIO_VERS > 1004
+
+
 
 ;
 
@@ -16,4 +18,16 @@ WHERE
 REGEXP_LIKE(denumire, '[[:cntrl:]]')
 OR 
 REGEXP_LIKE(IDNO, '[[:cntrl:]]')
-AND CUIIO_VERS = 2014;
+
+OR 
+REGEXP_LIKE(CAEM, '[[:cntrl:]]')
+
+--AND CUIIO_VERS >= 1004
+
+
+
+
+ORDER BY 
+CUIIO
+
+
