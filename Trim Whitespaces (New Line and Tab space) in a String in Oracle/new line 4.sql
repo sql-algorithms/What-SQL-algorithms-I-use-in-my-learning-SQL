@@ -43,7 +43,7 @@ instr(IDNO, chr(11)) > 0
 
 )
 
-AND CUIIO = 10065422
+--AND CUIIO = 10065422
 
 ;
 
